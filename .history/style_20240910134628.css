@@ -2309,15 +2309,6 @@ a.button:hover {
   font-weight: 900;
 }
 
-.dyns-play-dates1 {
-  color: var(--light);
-  font-weight: 900;
-}
-
-.dyns-play-dates1 span {
-  color: #33ff86;
-}
-
 .dyns-play-dates span {
   color: #33ff86;
 }
@@ -2424,15 +2415,6 @@ a.button:hover {
     font-size: 12px;
   }
 
-  .dyns-play-dates1 {
-    padding-right: 5%;
-    font-size: 12px;
-  }
-
-  .dyns-play-dates1 span {
-    color: #33ff86;
-  }
-
   .dyns-play-dates span {
     color: #33ff86;
   }
@@ -2455,6 +2437,57 @@ a.button:hover {
 /* dying need no shoes */
 
 /* playwriting */
+
+.heading-left-ctf {
+  font-size: 50px;
+  text-align: left;
+  padding-bottom: 10px;
+  font-weight: 400;
+  color: var(--light);
+}
+
+.ctf-last-section {
+  background-color: var(--green);
+  padding: 20px;
+}
+
+.ctf-last-section:hover {
+  background-color: var(--greendark);
+}
+
+.ctf-middle-section {
+  background-color: var(--red);
+  padding: 20px;
+}
+
+.ctf-middle-section:hover {
+  background-color: var(--reddark);
+}
+
+.ctf-first-section {
+  background-color: var(--gold);
+  padding: 20px;
+}
+
+.ctf-first-section:hover {
+  background-color: var(--golddark);
+}
+
+.ctf-full-page {
+  background-color: var(--reddark);
+  background-image: url(images/ctf.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 .download-link {
   font-weight: 900;
   padding-top: 20px;
@@ -2552,7 +2585,424 @@ a.button:hover {
   border-radius: 5px;
   cursor: pointer;
   outline: none;
-} 
+}
+
+/* ctf page */ 
+
+.ctf-heading-div {
+  margin: 0 auto;
+}
+
+.ctf-heading {
+  color: var(--light);
+  font-size: 0.6rem;
+}
+
+.ctf-heading span {
+  font-weight: bold;
+}
+
+.ctf-heading-main {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--light);
+  font-family: "CountyFiestaFont", "ADLaM Display", sans-serif;
+  letter-spacing: 10px;
+}
+
+.ctf-footer {
+  color: var(--light);
+  margin-bottom: 5px;
+  font-size: 0.7rem;
+}
+
+.ctf-theme-div {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+.ctf-theme-name {
+  background-color: var(--orange);
+  padding: 4px;
+  width: 80px;
+  margin-left: 38px;
+  margin-bottom: 4px;
+  font-size: 0.8rem;
+  color: var(--light);
+}
+
+.ctf-actual-theme {
+  background-color: var(--orange);
+  padding: 4px;
+  margin-bottom: 10px;
+  color: var(--light);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 350px;
+  font-size: 0.8rem;
+}
+
+.ctf-actual-dates {
+  background-color: var(--green);
+  padding: 4px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: var(--light);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 350px;
+  font-size: 0.8rem;
+}
+
+.ctf-theme-date {
+  background-color: transparent;
+  text-align: right;
+  justify-content: right;
+  margin-right: 35px;
+  margin-top: 5px;
+}
+
+@media (min-width: 470px) and (max-width: 768px) { 
+    .ctf-heading-div {
+  margin: 0 auto;
+}
+
+.ctf-heading {
+  color: var(--light);
+  font-size: 0.8rem;
+}
+
+.ctf-heading span {
+  font-weight: bold;
+}
+
+.ctf-heading-main {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: var(--light);
+  font-family: "CountyFiestaFont", "ADLaM Display", sans-serif;
+  letter-spacing: 10px;
+}
+
+.ctf-footer {
+  color: var(--light);
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+
+.ctf-theme-div {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+.ctf-theme-name {
+  background-color: var(--orange);
+  padding: 4px;
+  width: 80px;
+  margin-left: 38px;
+  margin-bottom: 4px;
+  font-size: 0.8rem;
+  color: var(--light);
+}
+
+.ctf-actual-theme {
+  background-color: var(--orange);
+  padding: 4px;
+  margin-bottom: 10px;
+  color: var(--light);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 366px;
+  font-size: 0.9rem;
+}
+
+.ctf-actual-dates {
+  background-color: var(--green);
+  padding: 4px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: var(--light);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 366px;
+  font-size: 0.9rem;
+}
+
+.ctf-theme-date {
+  background-color: transparent;
+  text-align: right;
+  justify-content: right;
+  margin-right: 35px;
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+
+.ctf-theme-date span {
+  background-color: var(--green);
+  padding: 4px;
+  color: var(--light);
+}
+}
+
+
+.ctf-theme-date span {
+  background-color: var(--green);
+  padding: 4px;
+  color: var(--light);
+}
+
+@media (min-width: 769px) and (max-width: 1024px) { 
+  .ctf-heading-div {
+  margin: 0 auto;
+}
+
+.ctf-heading {
+  color: var(--light);
+  font-size: 1rem;
+}
+
+.ctf-heading span {
+  font-weight: bold;
+}
+
+.ctf-heading-main {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--light);
+  font-family: "CountyFiestaFont", "ADLaM Display", sans-serif;
+  letter-spacing: 10px;
+}
+
+.ctf-footer {
+  color: var(--light);
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+
+.ctf-theme-name {
+  background-color: var(--orange);
+  padding: 4px;
+  width: 80px;
+  margin-left: 3px;
+  margin-bottom: 4px;
+  font-size: 0.8rem;
+  color: var(--light);
+}
+
+.ctf-actual-theme {
+  background-color: var(--orange);
+  padding: 4px;
+  margin-bottom: 10px;
+  color: var(--light);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 440px;
+  font-size: 1.1rem;
+}
+
+.ctf-actual-dates {
+  background-color: var(--green);
+  padding: 4px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: var(--light);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 440px;
+  font-size: 1.1rem;
+}
+
+.ctf-theme-date {
+  background-color: transparent;
+  text-align: right;
+  justify-content: right;
+  margin-right: 3px;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+
+.ctf-theme-date span {
+  background-color: var(--green);
+  padding: 4px;
+  color: var(--light);
+}
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) { 
+.ctf-heading-div {
+  margin: 0 auto;
+}
+
+.ctf-heading {
+  color: var(--light);
+  font-size: 1.2rem;
+}
+
+.ctf-heading span {
+  font-weight: bold;
+}
+
+.ctf-heading-main {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--light);
+  font-family: "CountyFiestaFont", "ADLaM Display", sans-serif;
+  letter-spacing: 10px;
+}
+
+.ctf-footer {
+  color: var(--light);
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+
+.ctf-theme-name {
+  background-color: var(--orange);
+  padding: 4px;
+  width: 80px;
+  margin-bottom: 4px;
+  font-size: 1rem;
+  color: var(--light);
+  visibility: hidden;
+}
+
+.ctf-actual-theme {
+  background-color: var(--orange);
+  padding: 4px;
+  margin-bottom: 20px;
+  color: var(--light);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 440px;
+  font-size: 1.1rem;
+}
+
+.ctf-actual-dates {
+  background-color: var(--green);
+  padding: 4px;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--light);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 440px;
+  font-size: 1.1rem;
+}
+
+.ctf-theme-date {
+  background-color: transparent;
+  text-align: right;
+  justify-content: right;
+  margin-top: 5px;
+  font-size: 1rem;
+  visibility: hidden;
+}
+
+
+.ctf-theme-date span {
+  background-color: var(--green);
+  padding: 4px;
+  color: var(--light);
+}
+}
+
+@media (min-width: 1401px) { 
+.ctf-heading {
+  color: var(--light);
+  font-size: 1.2rem;
+}
+
+.ctf-heading span {
+  font-weight: bold;
+}
+
+.ctf-heading-main {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--light);
+  font-family: "CountyFiestaFont", "ADLaM Display", sans-serif;
+  letter-spacing: 10px;
+}
+
+.ctf-footer {
+  color: var(--light);
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+
+.ctf-theme-name {
+  background-color: var(--orange);
+  padding: 4px;
+  width: 80px;
+  margin-bottom: 4px;
+  font-size: 1rem;
+  color: var(--light);
+  visibility: hidden;
+}
+
+.ctf-actual-theme {
+  background-color: var(--orange);
+  padding: 4px;
+  margin-bottom: 20px;
+  color: var(--light);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 440px;
+  font-size: 1.1rem;
+}
+
+.ctf-actual-dates {
+  background-color: var(--green);
+  padding: 4px;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--light);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 440px;
+  font-size: 1.1rem;
+}
+
+.ctf-theme-date {
+  background-color: transparent;
+  text-align: right;
+  justify-content: right;
+  margin-top: 5px;
+  font-size: 1rem;
+  visibility: hidden;
+}
+
+
+.ctf-theme-date span {
+  background-color: var(--green);
+  padding: 4px;
+  color: var(--light);
+}
+}
+
+
+/* ctf page */ 
 
 /* call for professionals */
 
