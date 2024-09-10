@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+    <title>KITFest - Our team</title>
+    <meta name="Des"
+        content="The Kenya International Theatre Festival (KITFest) provides a platform to showcase Kenyan theatre to the world and stimulate artists & audiences by bringing international theatrical performances to Kenya.">
+    <link href='https://fonts.googleapis.com/css2?family=Montserrat' rel='stylesheet'>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type=module src="javascript.js"></script>
+    <script type=module src="headers.js"></script>
+</head>
+
+<body id="about-kitfest">
+    <main-header></main-header>
+
+    <div class="heading-div-top">
+      <h1 class="heading">Our Team</h1>
+    </div>
+
+
+    <div class="ourTeam-page">
+        <div class="team-member">
+            <img src="images/ngobia.jpg" alt="Team Member Picture" class="member-picture">
+            <h2 class="member-name">Benson Ngobia</h2>
+            <h3 class="member-title">Director</h3>
+            <button class="show-more-btn" onclick="showModal('Benson Ngobia', 'Director', 'Benson Ngobia is a seasoned performing artiste, having made his acting debut in 1998 at his local church in Nakuru in the annual Presbyterian Church Festival. He has gone on to feature in tens of productions performed all over the country, with various theatre companies. He is also an award winning playwright and director in the Kenya National Drama and Film Festival, training schools such as Maryhill Girls High School, Loreto Convent Msongari, St. Marys Lwak Girls High School, amongst others. Academically, Ngobia holds a BA in Theatre Arts and Film Technology from Kenyatta University, and an MA in Digital Communication from USIU. He was instrumental in the establishment of the Department of Performing Arts, Film & Media Studies at KCA University, which he chaired between 2019 and 2022, championing a practice-oriented model to learning and assessment, which has led to the institution being recognized as a trend-setter in arts education. He also sits on the Executive Committee of the Kenya Music and Cultural Festival, the countrys oldest cultural festival, now in its 98th year.')">Show More</button>
+        </div>
+        <div class="team-member">
+            <img src="images/kevin.jpg" alt="Team Member Picture" class="member-picture">
+            <h2 class="member-name">Kevin Kimani</h2>
+            <h3 class="member-title">Chairman</h3>
+         <button class="show-more-btn" onclick="showModal('Kevin Kimani', 'Chairman', 'Kevin Kimani Kahuro is an accomplished professional in International Cultural Relations, with expertise in management, financial acumen, strategic planning, and leadership. He currently serves as the Programs and Business Development Manager at the Kenya Cultural Centre, Chairperson of the Kenya International Theatre Festival Trust, and Secretary General of the African Theatre Union. He is also the founder of the Kenya International Theatre Festival and Kenya Theatre Awards. With a background in Film and Theatre Arts, holding both Bachelors and Masters degrees and currently pursuing a PhD in Arts Management, Kevin has held several senior roles in the cultural and performing arts sectors. His skills in cultural exchange, team motivation, problem-solving, and communication make him a key figure in promoting and advancing the arts in Kenya and beyond.')">Show More</button> 
+        </div> 
+         <div class="team-member">
+            <img src="images/hadasa.jpg" alt="Team Member Picture" class="member-picture">
+            <h2 class="member-name">Hadasa Kariuki</h2>
+            <h3 class="member-title">Office Admin</h3>
+            <button class="show-more-btn" onclick="showModal('Hadassah Kariuki', 'Office Admin', '')">Show More</button>
+        </div> 
+        <div class="team-member">
+            <img src="images/olwal.jpg" alt="Team Member Picture" class="member-picture">
+            <h2 class="member-name">Olwal Dickens</h2>
+            <h3 class="member-title">Programs and Operations Officer</h3>
+            <button class="show-more-btn" onclick="showModal('Olwal Dickens', 'Programs and Operations Officer', 'Olwal Dickens is a self-driven professional, with a diverse background as a programs officer, operations manager, training manager, research assistant, communications officer, project coordinator, art and literature consultant, theatre and film practitioner, and creative writer, he excels in leading teams and developing strategies. His skills include research, data analysis, program evaluation, and community services. He is passionate about leveraging literature and art for social impact.', )">Show More</button>
+        </div>
+        <div class="team-member">
+            <img src="images/fiona.jpg" alt="Team Member Picture" class="member-picture">
+            <h2 class="member-name">Fiona Oyugi</h2>
+            <h3 class="member-title">Corporate Affairs officer</h3>
+            <button class="show-more-btn" onclick="showModal('Fiona Oyugi', 'Corporate Affairs officer', 'Fiona Oyugi is a dedicated professional with a background in journalism and mass communication. Currently thriving in multiple roles as a marketer, social media manager, and media communications officer, Fiona combines her expertise to effectively engage audiences across various platforms. Her passion for the theatre industry fuels her creative pursuits, where she actively contributes to promoting and advancing performing arts initiatives.')">Show More</button>
+        </div> 
+        
+    </div>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modal-name" class="modal-name"></h2>
+            <h3 id="modal-title" class="modal-title"></h3>
+            <p id="modal-bio" class="modal-bio"></p>
+        </div>
+    </div>
+
+    <div class="flex-div">
+        <h4>Back to top</h4>
+        <a href="#"><img class="topimg" src="/images/chevron-up-circle-outline.svg" alt=""></a>
+    </div>
+
+
+    <main-footer></main-footer>
+
+
+
+    <script>
+        function showModal(name, title, bio, image) {
+            document.getElementById('modal-name').textContent = name;
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-bio').textContent = bio;
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('modal')) {
+                closeModal();
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
