@@ -2183,6 +2183,12 @@ a.button:hover {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .swiper-pagination-bullet {
+    visibility: visible;
+  }
+}
+
 @media (min-width: 1024px) {
   .swiper-button-next {
     right: 50px;

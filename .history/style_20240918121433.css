@@ -2136,6 +2136,18 @@ details {
   z-index: 10;
 }
 
+.image-data span.text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.image-data h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+}
+
 a.button {
   display: inline-block;
   padding: 10px 20px;
@@ -2183,6 +2195,12 @@ a.button:hover {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .swiper-pagination-bullet {
+    visibility: visible;
+  }
+}
+
 @media (min-width: 1024px) {
   .swiper-button-next {
     right: 50px;
@@ -2193,129 +2211,130 @@ a.button:hover {
   }
 }
 
-.dyns-full-page {
-  background-color: var(--reddark);
-  background-image: url(images/dyns.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  color: white;
-  font-weight: bold;
-}
+  .dyns-full-page {
+    background-color: var(--reddark);
+    background-image: url(images/dyns.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+  }
 
-.dyns-start-heading {
-  padding-top: 50px;
-}
+  .dyns-start-heading {
+    padding-top: 50px;
+  }
 
-.dyns-play-age-limit {
-  background-color: black;
-  border: 2px solid red;
-  color: var(--light);
-  border-radius: 50%;
-  padding: 10px;
-  height: 40px;
-  width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-left: 80%;
-}
+  .dyns-play-age-limit {
+    background-color: black;
+    border: 2px solid red;
+    color: var(--light);
+    border-radius: 50%;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 80%;
+  }
 
-.dyns-start-heading-the {
-  margin-right: 70%;
-  color: var(--light);
-}
+  .dyns-start-heading-the {
+    margin-right: 70%;
+    color: var(--light);
+  }
 
-.dyns-play-title {
-  font-size: 40px;
-  color: var(--light);
-}
+  .dyns-play-title {
+    font-size: 40px;
+    color: var(--light);
+  }
 
-.dyns-play-title span {
-  padding-left: 10%;
-}
+  .dyns-play-title span {
+    padding-left: 10%;
+  }
 
-.dyns-play-written-by {
-  color: #c41e3a;
-  padding-left: 18%;
-  padding-bottom: 30px;
-  font-size: 10px;
-}
+  .dyns-play-written-by {
+    color: #c41e3a;
+    padding-left: 18%;
+    padding-bottom: 30px;
+    font-size: 10px;
+  }
 
-.dyns-play-actors {
-  font-size: 12px;
-  color: var(--light);
-}
+  .dyns-play-actors {
+    font-size: 12px;
+    color: var(--light);
+  }
 
-.dyns-play-actors span {
-  color: #33ff86;
-  padding-bottom: 5px;
-}
+  .dyns-play-actors span {
+    color: #33ff86;
+    padding-bottom: 5px;
+  }
 
-.dyns-play-venue {
-  margin-left: 3%;
-  font-size: 12px;
-  color: var(--light);
-}
+  .dyns-play-venue {
+    margin-left: 3%;
+    font-size: 12px;
+    color: var(--light);
+  }
 
-.dyns-play-venue span {
-  color: #33ff86;
-  padding-bottom: 13px;
-}
+  .dyns-play-venue span {
+    color: #33ff86;
+    padding-bottom: 13px;
+  }
 
-.dyns-line {
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+  .dyns-line {
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-.dyns-play-tickets {
-  font-size: 12px;
-  color: var(--light);
-}
+  .dyns-play-tickets {
+    font-size: 12px;
+    color: var(--light);
+  }
 
-.dyns-play-dates {
-  padding-right: 5%;
-  font-size: 12px;
-  color: var(--light);
-}
+  .dyns-play-dates {
+    padding-right: 5%;
+    font-size: 12px;
+    color: var(--light);
+  }
 
-.dyns-play-dates1 {
-  padding-right: 5%;
-  font-size: 12px;
-  color: var(--light);
-}
+  .dyns-play-dates1 {
+    padding-right: 5%;
+    font-size: 12px;
+    color: var(--light);
+  }
 
-.dyns-play-dates1 span {
-  color: #33ff86;
-}
+  .dyns-play-dates1 span {
+    color: #33ff86;
+  }
 
-.dyns-play-dates span {
-  color: #33ff86;
-}
+  .dyns-play-dates span {
+    color: #33ff86;
+  }
 
-.dyns-play-time span {
-  color: #33ff86;
-}
+  .dyns-play-time span {
+    color: #33ff86;
+  }
 
-.dyns-play-time {
-  font-size: 12px;
-  color: var(--light);
-}
+  .dyns-play-time {
+    font-size: 12px;
+    color: var(--light);
+  }
 
-.dyns-wright-button {
-  margin-bottom: 40px;
-  font-size: 13px;
-}
+  .dyns-wright-button {
+    margin-bottom: 40px;
+    font-size: 13px;
+  }
 
-@media (min-width: 470px) and (max-width: 768px) {
+@media (min-width: 470px) and (max-width: 768px) { 
+
   .dyns-start-heading {
     padding-top: 80px;
   }
@@ -2425,6 +2444,7 @@ a.button:hover {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
   .dyns-full-page {
     justify-content: center;
     text-align: center;
@@ -2435,7 +2455,7 @@ a.button:hover {
     font-weight: bold;
   }
 
-  .dyns-start-heading {
+.dyns-start-heading {
     padding-top: 87px;
   }
 
@@ -2544,6 +2564,7 @@ a.button:hover {
 }
 
 @media (min-width: 1025px) and (max-width: 1400px) {
+
   .dyns-full-page {
     justify-content: center;
     text-align: center;
@@ -2554,7 +2575,7 @@ a.button:hover {
     font-weight: bold;
   }
 
-  .dyns-start-heading {
+.dyns-start-heading {
     padding-top: 87px;
   }
 
@@ -2662,7 +2683,8 @@ a.button:hover {
   }
 }
 
-@media (min-width: 1401px) {
+@media (min-width: 1401px) { 
+
   .dyns-full-page {
     justify-content: center;
     text-align: center;
@@ -2673,7 +2695,7 @@ a.button:hover {
     font-weight: bold;
   }
 
-  .dyns-start-heading {
+.dyns-start-heading {
     padding-top: 87px;
   }
 
@@ -2689,11 +2711,11 @@ a.button:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 59%;
+    margin-left: 55%;
   }
 
   .dyns-start-heading-the {
-    margin-right: 20%;
+    margin-right: 29%;
     color: var(--light);
   }
 
@@ -2703,12 +2725,12 @@ a.button:hover {
   }
 
   .dyns-play-title span {
-    padding-right: 7%;
+    padding-left: 5%;
   }
 
   .dyns-play-written-by {
     color: #c41e3a;
-    padding-left: 5%;
+    padding-left: 10%;
     padding-bottom: 10px;
     font-size: 12px;
   }
@@ -2724,7 +2746,7 @@ a.button:hover {
   }
 
   .dyns-play-venue {
-    margin-right: 2%;
+    margin-left: 3%;
     font-size: 12px;
     color: var(--light);
   }
@@ -2735,8 +2757,8 @@ a.button:hover {
   }
 
   .dyns-line {
-    margin-right: 40%;
-    margin-left: 40%;
+    margin-right: 37%;
+    margin-left: 37%;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -2780,6 +2802,8 @@ a.button:hover {
     font-size: 13px;
   }
 }
+
+  
 
 /* dying need no shoes */
 
@@ -2881,7 +2905,7 @@ a.button:hover {
   border-radius: 5px;
   cursor: pointer;
   outline: none;
-}
+} 
 
 /* call for professionals */
 
@@ -2900,15 +2924,15 @@ a.button:hover {
 }
 
 .kitfest-2024-logo-statement {
-  color: var(--greendark);
-  font-family: "Spicy Rice", serif;
-  font-weight: 400;
-  font-style: normal;
+ color: var(--greendark);
+ font-family: "Spicy Rice", serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .kitfest-2024-logo-statement span {
   color: var(--reddark);
-  font-family: "Spicy Rice", serif;
+   font-family: "Spicy Rice", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -2926,7 +2950,7 @@ a.button:hover {
   margin-bottom: 15px;
 }
 
-.kitfest-call-for-professional-statement {
+.kitfest-call-for-professional-statement{ 
   color: var(--greendark);
   margin-bottom: 15px;
   font-weight: bold;
@@ -2941,7 +2965,7 @@ a.button:hover {
   width: 100%;
   margin: 0 auto;
   padding: 5px;
-  text-align: center;
+  text-align: center; 
   font-size: 12px;
 }
 
@@ -2957,9 +2981,9 @@ a.button:hover {
   }
 
   .kitfest2024-logo-image-person {
-    margin-top: 60px;
-    height: 160px;
-    width: 160px;
+  margin-top: 60px;
+  height: 160px;
+  width: 160px;
   }
 
   .kitfest-2024-logo-statement {
@@ -2996,9 +3020,9 @@ a.button:hover {
   }
 
   .kitfest2024-logo-image-person {
-    margin-top: 40px;
-    height: 160px;
-    width: 160px;
+  margin-top: 40px;
+  height: 160px;
+  width: 160px;
   }
 
   .kitfest-2024-logo-statement {
@@ -3039,9 +3063,9 @@ a.button:hover {
   }
 
   .kitfest2024-logo-image-person {
-    margin-top: 60px;
-    height: 160px;
-    width: 160px;
+  margin-top: 60px;
+  height: 160px;
+  width: 160px;
   }
 
   .kitfest-call-for-professional {
@@ -3073,9 +3097,9 @@ a.button:hover {
   }
 
   .kitfest2024-logo-image-person {
-    margin-top: 60px;
-    height: 160px;
-    width: 160px;
+  margin-top: 60px;
+  height: 160px;
+  width: 160px;
   }
 
   .kitfest-2024-logo-statement {
@@ -3105,6 +3129,9 @@ a.button:hover {
 }
 
 /* call for professionals */
+
+
+
 
 /* playwriting */
 

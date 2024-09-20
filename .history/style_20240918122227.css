@@ -2136,6 +2136,18 @@ details {
   z-index: 10;
 }
 
+.image-data span.text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.image-data h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+}
+
 a.button {
   display: inline-block;
   padding: 10px 20px;
@@ -2181,6 +2193,12 @@ a.button:hover {
 .nav-btn::after {
   font-size: 25px;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .swiper-pagination-bullet {
+    visibility: visible;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2724,7 +2742,7 @@ a.button:hover {
   }
 
   .dyns-play-venue {
-    margin-right: 2%;
+    margin-right: 4%;
     font-size: 12px;
     color: var(--light);
   }
