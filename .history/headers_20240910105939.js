@@ -1,9 +1,9 @@
 class mainHeader extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
             <link rel="stylesheet" href="style.css">
         <header class="header">
-        <div class="logo-link"><a href="/" class="nav-link"><img class="mainlogo" src="/images/kitfest-colour-logo.svg" alt="KITFest Logo" height="8px" width="130px"></a></div>
+        <div class="logo-link"><a href="/" class="nav-link"><img class="mainlogo" src="/images/kitfest-colour-logo.svg" alt="KITFest Logo" height="62px" width="auto"></a></div>
         
             <nav class="navbar">
             <div class="links">
@@ -45,44 +45,50 @@ class mainHeader extends HTMLElement {
                 
                 </script>
         </header>
-            `;
+            `
 
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-menu");
+            
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
 
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      navMenu.classList.toggle("active");
-    });
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
 
-    document.querySelectorAll(".nav-link").forEach((n) =>
-      n.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-      })
-    );
-    var token = sessionStorage.getItem("userToken");
-    let loginButton = document.querySelector(".login");
-    let loginOutButton = document.querySelector(".login-out");
-    if (token) {
-      loginButton.style.display = "none";
-      //loginOutButton.style.display = 'block'
-    } else {
-      loginOutButton.style.display = "none";
+        document.querySelectorAll(".nav-link").forEach((n) =>
+            n.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            })
+        );
+        var token=sessionStorage.getItem('userToken')
+        let loginButton = document.querySelector('.login')
+        let loginOutButton = document.querySelector('.login-out')
+        if (token) {
+            loginButton.style.display = 'none'
+            //loginOutButton.style.display = 'block'
+        }
+        else{
+            loginOutButton.style.display = 'none'
+        }
+        
+        loginOutButton.addEventListener("click", () => {
+            sessionStorage.removeItem('userToken');
+            window.location.href = "/index"
+        });
+
     }
-
-    loginOutButton.addEventListener("click", () => {
-      sessionStorage.removeItem("userToken");
-      window.location.href = "/index";
-    });
-  }
+    
 }
 
-customElements.define("main-header", mainHeader);
+customElements.define('main-header', mainHeader)
+
+
 
 class mainFooter extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
             <script src="emailSubscription.js"></script>
             <link rel="stylesheet" href="style.css">
             <footer class="footer-tray">
@@ -139,19 +145,23 @@ class mainFooter extends HTMLElement {
                 </div>
             </div>
             </footer>
-            `;
-  }
+            `
+    }
 }
 
-customElements.define("main-footer", mainFooter);
+customElements.define('main-footer', mainFooter)
+
+
 
 var date = new Date();
 var year = date.getFullYear();
-document.getElementById("currentYear").innerHTML = year;
+document.getElementById('currentYear').innerHTML = year;
+
+
 
 class mainTitleBar extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
             <link rel="stylesheet" href="style.css">
             <div class="title-bar">
             <div class="title-bar-1"></div>
@@ -161,20 +171,21 @@ class mainTitleBar extends HTMLElement {
             <div class="title-bar-5"></div>
             <div class="title-bar-6"></div>
         </div>
-            `;
-  }
+            `
+    }
 }
 
-customElements.define("main-title-bar", mainTitleBar);
+customElements.define('main-title-bar', mainTitleBar)
+
 
 const header = document.querySelector(".header");
 let lastScollY = window.scrollY;
 window.addEventListener("scroll", () => {
-  if (lastScollY < window.scrollY) {
-    header.classList.add("header--hidden");
-  } else {
-    header.classList.remove("header--hidden");
-  }
+    if (lastScollY < window.scrollY) {
+        header.classList.add("header--hidden");
+    } else {
+        header.classList.remove("header--hidden");
+    }
 
-  lastScollY = window.scrollY;
+    lastScollY = window.scrollY;
 });

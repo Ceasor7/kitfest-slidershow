@@ -3,7 +3,7 @@ class mainHeader extends HTMLElement {
     this.innerHTML = `
             <link rel="stylesheet" href="style.css">
         <header class="header">
-        <div class="logo-link"><a href="/" class="nav-link"><img class="mainlogo" src="/images/kitfest-colour-logo.svg" alt="KITFest Logo" height="8px" width="130px"></a></div>
+        <div class="logo-link"><a href="/" class="nav-link"><img class="mainlogo" src="/images/kitfest-colour-logo.svg" alt="KITFest Logo" height="20px" width="auto"></a></div>
         
             <nav class="navbar">
             <div class="links">
